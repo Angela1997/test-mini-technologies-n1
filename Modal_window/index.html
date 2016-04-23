@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="style.css">
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/js/modal.js"></script>
+  <title>Title</title>
+</head>
+<body>
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#Modal">
+  Button
+</button>
+<div class="modal fade" id="Modal" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="close"><span
+          aria-hidden="true">&times;</span></button>
+        <span class="հ"><b>Դասի հեղինակի տվյալները</b></span><br><br>
+        <div class="div1">
+          Հեղինակի անունը և ազգանունը <br>
+          <label for="name"></label>
+          <input type="text" class="form-control" id="name"><br>
+          Հեղինակի էլ. հասցեն <br>
+          <label for="email"></label>
+          <input type="email" class="form-control" id="email"><br>
+          Հեղինակի անձնական կամ սոց. էջի հասցեն<br>
+          <label for="url1"></label>
+          <input type="url" class="form-control" id="url1">
+        </div>
+        <br><br>
+        <span class="հ"><b> Դասի պարամետրերը</b></span>
+        <h5>Դասը</h5>
+        <div class="div1">
+          Վերնագիրը <br>
+          <label for="name1"></label>
+          <input type="text" class="form-control" id="name1" required>
+        </div>
+        <h5>Պարունակությունը</h5>
+        <div class="div1">
+          Նկարագրությունը<br>
+          <label for="name3" class="control-label"></label>
+	  <textarea id="name3" rows="3" required>
+</textarea><br>
+          Առաջադրանքը
+          <br>
+          <label for="name4" class="control-label"></label>
+	  <textarea id="name4" rows="3" required>
+</textarea>
+        </div>
+        <h5>Ծրագրային կոդի պարամետրերը</h5>
+        <div class="div1">
+          Սկզբնական կոդը <br>
+          <label for="name5" class="control-label"></label>
+	  <textarea id="name5" rows="3" required>
+</textarea>
+          <br>
+          Շարունակվող
+          <div class="d1">
+            <form class="form-inline">
+              <div class="form-group">
+                <label class="radio-inline">
+                  <input name="trueorfalse" type="radio">
+                  true</label> &nbsp
+                <label class="radio-inline">
+                  <input name="trueorfalse" type="radio" checked>
+                  false</label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <h5> Կոդի ընդգծման պարամետրերը</h5>
+        <div class="d1 div1">
+          Գույնը
+          <label for="name6"></label>
+          <input type="text" class="form-control" id="name6">
+          <br>
+          Դասավորություն<br>
+          <div class="d1">
+            <span class="a1">տող1</span><span class="a2">սյուն1</span><span class="a2">տող2</span><span class="a2">սյուն2</span>
+            <form class="form-horizontal">
+              <div class="form-inline">
+                <label for="text7"></label>
+                <input type="text" class="input-small" id="text7">
+                <label for="text8"></label>
+                <input type="password" class="input-small" id="text8">
+                <label for="text9"></label>
+                <input type="text" class="input-small" id="text9">
+                <label for="text10"></label>
+                <input type="password" class="input-small" id="text10">
+              </div>
+            </form>
+          </div>
+        </div>
+        <br>
+        <b>Կոդի խմբագրման արգելափակման կոորդինատներ</b>
+        <div class="d1 div1">
+          <span class="a1">տող1</span><span class="a2">սյուն1</span><span class="a2">տող2</span><span
+          class="a2">սյուն2</span>
+          <form class="form-horizontal">
+            <div class="form-inline">
+              <label for="text11"></label>
+              <input type="text" class="input-small" id="text11">
+              <label for="text12"></label>
+              <input type="password" class="input-small" id="text12">
+              <label for="text13"></label>
+              <input type="text" class="input-small" id="text13">
+              <label for="text14"></label>
+              <input type="password" class="input-small" id="text14">
+            </div>
+          </form>
+        </div>
+        <br>
+        <b>Նշորդի դիրքը սկզբնական կոդում</b>
+        <div class="d1 div1">
+          <span class="a1">տող1</span><span class="a2">սյուն1</span>
+          <form class="form-horizontal">
+            <div class="form-inline">
+              <label for="text15"></label>
+              <input type="text" class="input-small" id="text15">
+              <label for="text16"></label>
+              <input type="password" class="input-small" id="text16">
+            </div>
+          </form>
+        </div>
+        <br>
+        <b>Առաջադրանքի ստուգում</b>
+        <div class="d1 div1">
+          <label for="name17" class="control-label"></label>
+	  <textarea id="name17" rows="3">
+</textarea></div>
+        <br>
+        <b>Օգտատիրոջ կողմից ծրագրային կոդի ստուգում</b>
+        <div class="d1 div1">
+          Փոփոխությունները <br>
+          <label for="name18" class="control-label"></label>
+	  <textarea id="name18" rows="3">
+</textarea>
+          <br>
+          Հաղորդագրություն
+          <label for="name19" class="control-label"></label>
+	  <textarea id="name19" rows="3">
+</textarea></div>
+        <br>
+        <b>Օգտատիրոջ կողմից ծրագրային կոդի ելքի ստուգում</b>
+        <div class="d1 div1">
+          Փոփոխությունները <br>
+          <label for="name20" class="control-label"></label>
+	  <textarea id="name20" rows="3">
+</textarea>
+          <br>
+          Հաղորդագրություն
+          <label for="name21" class="control-label"></label>
+	  <textarea id="name21" rows="3">
+</textarea></div>
+        <br>
+        <h4>Օգտագործված նյութերի հղումները</h4>
+        <div class="div1">
+          <label for="name22" class="control-label"></label>
+	  <textarea id="name22" rows="3">
+</textarea>
+        </div>
+        <h4>Նշումներ</h4>
+        <div class="div1">
+          <label for="name23" class="control-label"></label>
+	  <textarea id="name23" rows="3">
+</textarea>
+        </div>
+        <br>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Հաստատել</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
